@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { MatInputModule, MdNativeDateModule, MdIconModule, MdButtonModule, MdChipsModule } from '@angular/material';
 import {MatProgressSpinnerModule} from '@angular/material';
 import {MatTooltipModule} from '@angular/material';
+import {MatTabsModule} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import {MatTooltipModule} from '@angular/material';
     MdButtonModule,
     MdChipsModule,
     MatProgressSpinnerModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
