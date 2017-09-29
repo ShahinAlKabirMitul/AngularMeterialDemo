@@ -1,3 +1,14 @@
-<md-input-container>
-  <textarea  mdInput mdTextareaAutosize rows="2" ></textarea>
-</md-input-container>
+<md-form-field>
+
+  <input 
+  [min]="minDate"
+  [max]="maxDate"
+  (focus)="picker.open()"
+  mdInput 
+  [mdDatepicker]="picker" 
+   placeholder="Choose a date"
+   (focus)="picker.open()"
+   >
+  <md-datepicker-toggle mdSuffix [for]="picker"></md-datepicker-toggle>
+  <md-datepicker #picker></md-datepicker>
+</md-form-field>
