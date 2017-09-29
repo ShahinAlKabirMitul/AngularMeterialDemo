@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { NgModel } from '@angular/forms';
 
+import { NgModel } from '@angular/forms';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,11 +8,11 @@ import { NgModel } from '@angular/forms';
 })
 export class AppComponent {
   title = 'app';
-  favoriteSeason: string;
-  seasons = [
-    'Winter',
-    'Spring',
-    'Summer',
-    'Autumn',
-  ];
-}
+  selectedValue: string;
+  
+    foods = [
+      {value: 'steak-0', viewValue: 'Steak'},
+      {value: 'pizza-1', viewValue: 'Pizza'},
+      {value: 'tacos-2', viewValue: 'Tacos'}
+    ];
+  }
