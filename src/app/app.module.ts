@@ -9,6 +9,7 @@ import {MatSelectModule} from '@angular/material';
 import { AppComponent } from './app.component';
 import { MatInputModule, MdNativeDateModule, MdIconModule, MdButtonModule, MdChipsModule } from '@angular/material';
 import {MatProgressSpinnerModule} from '@angular/material';
+import {MatTooltipModule} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import {MatProgressSpinnerModule} from '@angular/material';
     MdIconModule ,
     MdButtonModule,
     MdChipsModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]
