@@ -7,7 +7,7 @@ import {FormsModule} from '@angular/forms';
 import {MatRadioModule} from '@angular/material';
 import {MatSelectModule} from '@angular/material';
 import { AppComponent } from './app.component';
-import { MatInputModule, MdNativeDateModule } from '@angular/material';
+import { MatInputModule, MdNativeDateModule, MdIconModule } from '@angular/material';
 
 
 @NgModule({
@@ -24,7 +24,8 @@ import { MatInputModule, MdNativeDateModule } from '@angular/material';
     MatSelectModule,
     MatInputModule,
     MatDatepickerModule,
-    MdNativeDateModule
+    MdNativeDateModule,
+    MdIconModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
