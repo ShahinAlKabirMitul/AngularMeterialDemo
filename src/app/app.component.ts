@@ -1,8 +1,10 @@
+import { EditCourseComponent } from './edit-course/edit-course.component';
 
 
 import { Component } from '@angular/core';
 
 import { NgModel } from '@angular/forms';
+import { MdDialog } from '@angular/material';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -10,12 +12,13 @@ import { NgModel } from '@angular/forms';
 })
 export class AppComponent {
   title = 'app';
-  timer;
-  progess=0;
-   constructor(){
-     this.timer= setInterval(()=>{
-        this.progess++;
-        if(this.progess==0)clearInterval(this.timer);
-     },20 );
-   }
+  constructor(private dialog : MdDialog){
+
+  }
+  openDialog(){
+    this.dialog.open(EditCourseComponent)
+    .afterClosed()
+    .subscribe(result=> console.log(result))
+    ;
+  }
   }

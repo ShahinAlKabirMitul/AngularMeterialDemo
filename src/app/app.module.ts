@@ -10,14 +10,18 @@ import { AppComponent } from './app.component';
 import { MatInputModule, MdNativeDateModule, MdIconModule, MdButtonModule, MdChipsModule } from '@angular/material';
 import {MatProgressSpinnerModule} from '@angular/material';
 import {MatTooltipModule} from '@angular/material';
-import {MatTabsModule} from '@angular/material';
+import { MatTabsModule, MatDialogModule } from '@angular/material';
+import { EditCourseComponent } from './edit-course/edit-course.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    EditCourseComponent
+  ],
+  entryComponents:[
+    EditCourseComponent
   ],
   imports: [
- 
     FormsModule,
     BrowserModule,
     BrowserAnimationsModule,
@@ -32,7 +36,8 @@ import {MatTabsModule} from '@angular/material';
     MdChipsModule,
     MatProgressSpinnerModule,
     MatTooltipModule,
-    MatTabsModule
+    MatTabsModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
