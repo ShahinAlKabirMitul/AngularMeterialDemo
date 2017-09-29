@@ -1,11 +1,3 @@
 <md-input-container>
-  <input type="text" 
-    ngModel name="user"
-    #user="ngModel"
-    mdInput placeholder="Use"
-    required>
-  <md-hint>Type a unique UserName</md-hint>
-  <span mdSuffix>@domian.com</span>
-  <span mdPrefix>adn.</span>
-  <md-error *ngIf="user.invalid && user.errors.required">UserName required</md-error>
+  <textarea  mdInput mdTextareaAutosize rows="2" ></textarea>
 </md-input-container>
