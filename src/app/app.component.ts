@@ -9,6 +9,9 @@ import { NgModel } from '@angular/forms';
 })
 export class AppComponent {
   title = 'app';
-   minDate=new Date(2017,1,0)
-   maxDate=new Date(2018,1,1)
+   categories=[
+     {name:'Biginner'},
+     {name:'Intermediate  '},
+     {name:'Advance'}
+   ]
   }

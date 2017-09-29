@@ -1,5 +1,5 @@
-<button md-button>Button1</button>
-<button color="primary" md-raised-button>Primary</button>
-<button color="accent" md-raised-button>Accent</button>
-<button color="warn" md-raised-button>Warn</button>
-<button color="primary"  md-fab><md-icon>check</md-icon> </button>
+<md-chip-list>
+  
+  <md-chip
+  *ngFor="let c of categories">{{c.name}}</md-chip>
+</md-chip-list>
