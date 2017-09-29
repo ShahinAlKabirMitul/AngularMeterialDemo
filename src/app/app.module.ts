@@ -8,7 +8,7 @@ import {MatRadioModule} from '@angular/material';
 import {MatSelectModule} from '@angular/material';
 import { AppComponent } from './app.component';
 import { MatInputModule, MdNativeDateModule, MdIconModule, MdButtonModule, MdChipsModule } from '@angular/material';
-
+import {MatProgressSpinnerModule} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -27,7 +27,8 @@ import { MatInputModule, MdNativeDateModule, MdIconModule, MdButtonModule, MdChi
     MdNativeDateModule,
     MdIconModule ,
     MdButtonModule,
-    MdChipsModule
+    MdChipsModule,
+    MatProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

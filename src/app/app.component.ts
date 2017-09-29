@@ -1,4 +1,5 @@
 
+
 import { Component } from '@angular/core';
 
 import { NgModel } from '@angular/forms';
@@ -9,9 +10,12 @@ import { NgModel } from '@angular/forms';
 })
 export class AppComponent {
   title = 'app';
-   categories=[
-     {name:'Biginner'},
-     {name:'Intermediate  '},
-     {name:'Advance'}
-   ]
+  timer;
+  progess=0;
+   constructor(){
+     this.timer= setInterval(()=>{
+        this.progess++;
+        if(this.progess==0)clearInterval(this.timer);
+     },20 );
+   }
   }
