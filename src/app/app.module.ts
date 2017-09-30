@@ -1,3 +1,4 @@
+import { CourseService } from './course.service';
 import { BrowserModule } from '@angular/platform-browser';
 import {BrowserAnimationsModule}from '@angular/platform-browser/animations'
 import {NoopAnimationsModule}from '@angular/platform-browser/animations'
@@ -12,6 +13,7 @@ import {MatProgressSpinnerModule} from '@angular/material';
 import {MatTooltipModule} from '@angular/material';
 import { MatTabsModule, MatDialogModule } from '@angular/material';
 import { EditCourseComponent } from './edit-course/edit-course.component';
+import { MdComponentsModule } from './md-components.module';
 
 @NgModule({
   declarations: [
@@ -25,21 +27,26 @@ import { EditCourseComponent } from './edit-course/edit-course.component';
     FormsModule,
     BrowserModule,
     BrowserAnimationsModule,
-    MatCheckboxModule,
-    MatRadioModule,
-    MatSelectModule,
-    MatInputModule,
-    MatDatepickerModule,
-    MdNativeDateModule,
-    MdIconModule ,
-    MdButtonModule,
-    MdChipsModule,
-    MatProgressSpinnerModule,
-    MatTooltipModule,
-    MatTabsModule,
-    MatDialogModule
+    MdComponentsModule
+    // MatCheckboxModule,
+    // MatRadioModule,
+    // MatSelectModule,
+    // MatInputModule,
+    // MatDatepickerModule,
+    // MdNativeDateModule,
+    // MdIconModule ,
+    // MdButtonModule,
+    // MdChipsModule,
+    // MatProgressSpinnerModule,
+    // MatTooltipModule,
+    // MatTabsModule,
+    // MatDialogModule
   ],
-  providers: [],
+  providers: [
+    CourseService,
+    { provide:CourseService,useClass:CourseService},
+   
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
